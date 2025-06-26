@@ -171,7 +171,7 @@ export default function Home() {
               <div className="bg-yellow-500 border-t-2 border-l-2 border-r-4 border-b-4 p-2 rounded-md">
               <a href="https://www.geckoterminal.com/bsc/pools/0xfc5bf2c8d2dbf6b72ffd391ea4c1debe8c35422a">
                   <div className="flex gap-2 items-center justify-center">
-                    <h1>BSCscan</h1>
+                    <h1>Gecko Terminal</h1>
                   </div>
                 </a>
               </div>
