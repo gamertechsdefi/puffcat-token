@@ -1,7 +1,5 @@
 "use client";
 
-import { useState } from "react";
-import { FaTwitter, FaDiscord, FaMedium, FaTelegram } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 
