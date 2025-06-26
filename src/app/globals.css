@@ -22,7 +22,14 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Cherry Bomb One", system-ui;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Cherry Bomb One", sans-serif;
 }
