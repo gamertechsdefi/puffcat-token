@@ -40,7 +40,7 @@ export default function Home() {
         <section className="bg-blue-700 border-blue-400 border-r-8 border-b-8 rounded-2xl p-4 md:p-8 mt-24 mx-4 md:mx-8 flex flex-col md:flex-row items-center gap-4 md:gap-8">
           <Image src="/images/puffcat-logo.png" width={200} height={200} alt="PuffCat Fairness" className="h-48 w-48" />
           <div className="flex flex-col text-center md:text-left">
-            <h2 className="text-3xl mb-2">PUFFCAT'S FAIRNESS</h2>
+            <h2 className="text-3xl mb-2">PUFFCAT&apos;S FAIRNESS</h2>
             <p className="text-lg">
               In a sea of forgettable tokens and chaotic coin launches, PuffCat prowls in with style, substance, and sass.
               This isn&apos;t just another cat meme coin: this is a whole feline-powered movement. Built to entertain, reward,
@@ -49,8 +49,8 @@ export default function Home() {
             </p>
             <p className="text-lg mt-2">
               With a max supply of 420 million tokens, anti-whale limits, and a fair launch model,
-              PuffCat is engineered for long-term sustainability and massive viral potential. Whether you're here to stake,
-              trade, meme, or game, you're in the right litter box.
+              PuffCat is engineered for long-term sustainability and massive viral potential. Whether you&apos;re here to stake,
+              trade, meme, or game, you&apos;re in the right litter box.
             </p>
           </div>
         </section>
