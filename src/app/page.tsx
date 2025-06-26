@@ -128,7 +128,7 @@ export default function Home() {
           <div className="flex flex-col items-center">
             <p className="flex gap-2 items-center text-xl">
               <span>Supply:</span>
-              <span className="font-bold text-2xl">420,000,000,000</span>
+              <span className="font-bold text-2xl">420,000,000</span>
             </p>
             <p className="flex gap-2 items-center text-xl">
               <span>Name:</span>
