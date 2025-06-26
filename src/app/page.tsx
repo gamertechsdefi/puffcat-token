@@ -59,7 +59,7 @@ export default function Home() {
         <section className="py-32 text-white p-6 rounded-lg mt-6 text-center">
           <h2 className="text-6xl md:text-8xl pb-8 text-yellow-500 mb-4">ROADMAP</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:justify-center">
-            <div className="bg-blue-800 border-blue-300 border-t-2 border-l-2 border-r-6 border-b-6 rotate-355 p-4 rounded-lg">
+            <div className="text-lg bg-blue-800 border-blue-300 border-t-2 border-l-2 border-r-6 border-b-6 rotate-355 p-4 rounded-lg">
               <h3 className="text-2xl pb-4">PHASE 1</h3>
               <p>1M Market Cap</p>
               <p>PuffCat Socials Setup</p>
