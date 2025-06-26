@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import { Cherry_Bomb_One } from "next/font/google";
 import { Nunito_Sans } from "next/font/google";
 import "./globals.css";
