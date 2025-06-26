@@ -60,7 +60,7 @@ export default function Home() {
             <p className="text-lg">
               PUFFCAT is a fun, transparent token where the community leads the project&apos;s direction with
               memes, games, giveaways, burns, and a growing culture of cat lovers & crypto fans.
-              No fake promises. No over-engineered "utility." Just community, memes, and fun.
+              No fake promises. No over-engineered utility. Just community, memes, and fun.
             </p>
             <p className="text-lg mt-2">
               Follow the pawprints... join the movement of a safe community driven meme token with safe contract and
