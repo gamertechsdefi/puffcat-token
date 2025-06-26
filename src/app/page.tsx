@@ -31,11 +31,6 @@ export default function Home() {
         {/* Hero Section */}
         <section className="min-h-screen relative py-8 flex flex-col px-8 md:px-16 items-center text-white text-center overflow-hidden">
           {/* Background Image Layer with Opacity */}
-          <div
-            className="absolute inset-0 bg-cover bg-center opacity-10"
-            style={{ backgroundImage: 'url("/images/puffcat-bg.jpg")' }}
-          ></div>
-
           {/* Foreground Content Layer */}
           <div className="relative z-10">
             <h1 className="text-7xl text-yellow-500 md:text-9xl mb-4">PUFFCAT</h1>
@@ -100,19 +95,20 @@ export default function Home() {
               <h3 className="text-2xl pb-4">PHASE 2</h3>
               <p>Website Development & Release</p>
               <p>Listing on GekoTerminal & voting platforms</p>
-              <p>Listing on NTM.ai and BSC trending</p>
+              <p>Listing on NTMI and BSC trending</p>
               <p>Contests and Giveaways</p>
             </div>
             <div className="bg-blue-800 border-blue-300 border-t-2 border-l-2 border-r-6 border-b-6 rotate-350 p-4 rounded-lg">
               <h3 className="text-2xl pb-4">PHASE 3</h3>
               <p>BSCscan update</p>
-              <p>Listing on DEXTools & DexScreener</p>
+              <p>Listing on DexScreener</p>
               <p>CoinGecko & CoinMarketCap Applications</p>
             </div>
             <div className="bg-blue-800 border-blue-300 border-t-2 border-l-2 border-r-6 border-b-6 rotate-5 p-4 rounded-lg">
               <h3 className="text-2xl pb-4">PHASE 4</h3>
+              <p>Smart Contract Audit</p>
               <p>Staking platform launch</p>
-              <p>Community Onboarding</p>
+              <p>Listing on DEXTools</p>
               <p>Game Teasers/NFT Drops</p>
               <p>Partnership with Cat Brands</p>
             </div>
