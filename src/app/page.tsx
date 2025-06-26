@@ -17,43 +17,60 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-blue-950 text-white flex flex-col items-center justify-start">
       {/* Header */}
-      <header className="w-full px-8 py-4 rounded-lg flex justify-between items-center">
-        <Image src="/images/puffcat-logo.png" width={75} height={75} alt="Pika Icon" className="" />
-        <div className="flex space-x-4 text-black">
-          <a href="https://x.com/puff_cattoken"><div className="bg-white border-t border-l border-b-2 border-r-2 p-2" ><FaXTwitter size={20} /></div></a>
-          <a href="https://t.me/puffcatchannel"><div className="bg-white border-t border-l border-b-2 border-r-2 p-2" ><FaTelegram size={20} /></div></a>
+      <header className="w-full px-8 py-4 flex justify-between items-center">
+        <Image src="/images/puffcat-logo.png" width={75} height={75} alt="puffcat Icon" className="" />
+        <div className="flex gap-4 text-black">
+          <a href="https://x.com/puff_cattoken"><div className="rounded bg-white border-t border-l border-b-4 border-r-4 p-2" ><FaXTwitter size={20} /></div></a>
+          <a href="https://t.me/puffcatchannel"><div className="rounded bg-white border-t border-l border-b-4 border-r-4 p-2" ><FaTelegram size={20} /></div></a>
         </div>
 
       </header>
 
       {/* Main Content */}
-      <main className="mt-8 w-full">
+      <main className="w-full">
         {/* Hero Section */}
-        <section className="flex flex-col px-8 md:px-16 items-center text-white rounded-lg text-center relative">
-          <h1 className="text-7xl text-yellow-500 md:text-9xl mb-4">PUFFCAT</h1>
-          <div className="flex flex-col md:flex-row items-center md:ml-[400px]">
-            <Image src="/images/puffcat-logo.png" width={200} height={200} alt="Pika Hero" className="w-94 h-72 md:w-[500px] md:h-[400px]" />
-            <div className="flex flex-col items-center md:items-start md:ml-8">
-              <p className="text-lg text-center md:text-left">
-                Ready for PuffCat Pumps? It&apos;s time for the big boss: PuffCat to flip dogs and frogs!
-              </p>
-              <div className="flex justify-center space-x-4 mt-4">
-                <a href="https://pancakeswap.finance/?outputCurrency=0x14a8d0ac8fc456899f2dd33c3f4e32403a78126c">
-                  <button className="font-bold bg-blue-400 text-white px-8 py-2 rounded">
-                    Buy now
-                  </button></a>
-                <a href="https://dexscreener.com/bsc/0xfc5bf2c8d2dbf6b72ffd391ea4c1debe8c35422a">
-                  <button className="font-bold border-2 border-blue-400 text-white px-8 py-2 rounded">
-                    Chart
-                  </button></a>
+        <section className="min-h-screen relative py-8 flex flex-col px-8 md:px-16 items-center text-white text-center overflow-hidden">
+          {/* Background Image Layer with Opacity */}
+          <div
+            className="absolute inset-0 bg-cover bg-center opacity-10"
+            style={{ backgroundImage: 'url("/images/puffcat-bg.jpg")' }}
+          ></div>
+
+          {/* Foreground Content Layer */}
+          <div className="relative z-10">
+            <h1 className="text-7xl text-yellow-500 md:text-9xl mb-4">PUFFCAT</h1>
+            <div className="flex flex-col md:flex-row items-center md:ml-[400px]">
+              <Image
+                src="/images/puffcat-logo.png"
+                width={200}
+                height={200}
+                alt="Pika Hero"
+                className="w-94 h-94"
+              />
+              <div className="flex flex-col items-center md:items-start md:ml-8">
+                <p className="text-lg text-center md:text-left">
+                  Ready for PuffCat Pumps? It&apos;s time for the big boss: PuffCat to flip dogs and frogs!
+                </p>
+                <div className="flex justify-center space-x-4 mt-4">
+                  <a href="https://pancakeswap.finance/?outputCurrency=0x14a8d0ac8fc456899f2dd33c3f4e32403a78126c">
+                    <button className="font-bold bg-blue-600 text-white px-8 py-2 rounded">
+                      Buy now
+                    </button>
+                  </a>
+                  <a href="https://dexscreener.com/bsc/0xfc5bf2c8d2dbf6b72ffd391ea4c1debe8c35422a">
+                    <button className="font-bold border-2 border-blue-400 text-white px-8 py-2 rounded">
+                      Chart
+                    </button>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-
         </section>
 
+
         {/* Fairness Section */}
-        <section className="bg-blue-700 border-blue-400 border-r-8 border-b-8 rounded-2xl p-4 md:p-8 mt-24 mx-8 md:mx-16 flex flex-col md:flex-row items-center gap-4 md:gap-8">
+        <section className="bg-blue-800 border-blue-400 border-r-8 border-b-8 rounded-2xl p-4 md:p-8 mt-24 mx-8 md:mx-16 flex flex-col md:flex-row items-center gap-4 md:gap-8">
           <Image src="/images/puffcat-logo.png" width={200} height={200} alt="PuffCat Fairness" className="h-48 w-48" />
           <div className="flex flex-col text-center md:text-left">
             <h2 className="text-3xl text-yellow-500 mb-2">PUFFCAT&apos;S FAIRNESS</h2>
@@ -169,7 +186,7 @@ export default function Home() {
                 </a>
               </div>
               <div className="bg-yellow-500 border-t-2 border-l-2 border-r-4 border-b-4 p-2 rounded-md">
-              <a href="https://www.geckoterminal.com/bsc/pools/0xfc5bf2c8d2dbf6b72ffd391ea4c1debe8c35422a">
+                <a href="https://www.geckoterminal.com/bsc/pools/0xfc5bf2c8d2dbf6b72ffd391ea4c1debe8c35422a">
                   <div className="flex gap-2 items-center justify-center">
                     <h1>Gecko Terminal</h1>
                   </div>
