@@ -2,16 +2,26 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { FaTelegram, FaXTwitter } from "react-icons/fa6";
+import { FiCopy } from "react-icons/fi";
 
 export default function Home() {
+
+  const fullAddress = "0x14a8d0AC8Fc456899F2DD33C3f4E32403A78126c";
+  const shortAddress = `${fullAddress.slice(0, 10)}...${fullAddress.slice(-10)}`;
+  const handleCopy = () => {
+    navigator.clipboard.writeText(fullAddress);
+    alert("Address copied!");
+  };
+
   return (
     <div className="min-h-screen bg-blue-950 text-white flex flex-col items-center justify-start">
       {/* Header */}
       <header className="w-full px-8 py-4 rounded-lg flex justify-between items-center">
         <Image src="/images/puffcat-logo.png" width={75} height={75} alt="Pika Icon" className="" />
         <div className="flex space-x-4 text-black">
-          <Link href="#" className="bg-white px-4 py-2 rounded">Stake</Link>
-          <Link href="" className="bg-white  px-4 py-2 rounded">Community</Link>
+          <a href="https://x.com/puff_cattoken"><div className="bg-white border-t border-l border-b-2 border-r-2 p-2" ><FaXTwitter size={20} /></div></a>
+          <a href="https://t.me/puffcatchannel"><div className="bg-white border-t border-l border-b-2 border-r-2 p-2" ><FaTelegram size={20} /></div></a>
         </div>
 
       </header>
@@ -19,7 +29,7 @@ export default function Home() {
       {/* Main Content */}
       <main className="mt-8 w-full">
         {/* Hero Section */}
-        <section className="flex flex-col md:mx-16 items-center text-white rounded-lg text-center relative">
+        <section className="flex flex-col px-8 md:px-16 items-center text-white rounded-lg text-center relative">
           <h1 className="text-7xl text-yellow-500 md:text-9xl mb-4">PUFFCAT</h1>
           <div className="flex flex-col md:flex-row items-center md:ml-[400px]">
             <Image src="/images/puffcat-logo.png" width={200} height={200} alt="Pika Hero" className="w-86 h-86" />
@@ -28,8 +38,14 @@ export default function Home() {
                 Ready for PuffCat Pumps? It&apos;s time for the big boss: PuffCat to flip dogs and frogs!
               </p>
               <div className="flex justify-center space-x-4 mt-4">
-                <button className="font-bold bg-blue-400 text-white px-8 py-2 rounded">Buy Now</button>
-                <button className="font-bold border-2 border-blue-400 px-8 py-2 rounded">Chart</button>
+                <a href="https://dexscreener.com/bsc/0xfc5bf2c8d2dbf6b72ffd391ea4c1debe8c35422a">
+                  <button className="font-bold bg-blue-400 text-white px-8 py-2 rounded">
+                    Buy now
+                  </button></a>
+                <a href="https://dexscreener.com/bsc/0xfc5bf2c8d2dbf6b72ffd391ea4c1debe8c35422a">
+                  <button className="font-bold border-2 border-blue-400 text-white px-8 py-2 rounded">
+                    Chart
+                  </button></a>
               </div>
             </div>
           </div>
@@ -37,27 +53,25 @@ export default function Home() {
         </section>
 
         {/* Fairness Section */}
-        <section className="bg-blue-700 border-blue-400 border-r-8 border-b-8 rounded-2xl p-4 md:p-8 mt-24 mx-4 md:mx-8 flex flex-col md:flex-row items-center gap-4 md:gap-8">
+        <section className="bg-blue-700 border-blue-400 border-r-8 border-b-8 rounded-2xl p-4 md:p-8 mt-24 mx-8 md:mx-16 flex flex-col md:flex-row items-center gap-4 md:gap-8">
           <Image src="/images/puffcat-logo.png" width={200} height={200} alt="PuffCat Fairness" className="h-48 w-48" />
           <div className="flex flex-col text-center md:text-left">
-            <h2 className="text-3xl mb-2">PUFFCAT&apos;S FAIRNESS</h2>
+            <h2 className="text-3xl text-yellow-500 mb-2">PUFFCAT&apos;S FAIRNESS</h2>
             <p className="text-lg">
-              In a sea of forgettable tokens and chaotic coin launches, PuffCat prowls in with style, substance, and sass.
-              This isn&apos;t just another cat meme coin: this is a whole feline-powered movement. Built to entertain, reward,
-              and engage, PuffCat Coin merges the unstoppable force of meme culture with smart tokenomics and true
-              community spirit.
+              PUFFCAT is a fun, transparent token where the community leads the project&apos;s direction with
+              memes, games, giveaways, burns, and a growing culture of cat lovers & crypto fans.
+              No fake promises. No over-engineered "utility." Just community, memes, and fun.
             </p>
             <p className="text-lg mt-2">
-              With a max supply of 420 million tokens, anti-whale limits, and a fair launch model,
-              PuffCat is engineered for long-term sustainability and massive viral potential. Whether you&apos;re here to stake,
-              trade, meme, or game, you&apos;re in the right litter box.
+              Follow the pawprints... join the movement of a safe community driven meme token with safe contract and
+              100% lp locked for 1yr
             </p>
           </div>
         </section>
 
         {/* Roadmap Section */}
-        <section className="py-32 text-white p-6 rounded-lg mt-6 text-center">
-          <h2 className="text-6xl md:text-8xl pb-8 text-yellow-500 mb-4">ROADMAP</h2>
+        <section className="py-32 mx-8 md:mx-16 text-white px-8 rounded-lg mt-16 text-center">
+          <h2 className="text-4xl md:text-8xl pb-8 text-yellow-500 mb-4">ROADMAP</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:justify-center">
             <div className="text-lg bg-blue-800 border-blue-300 border-t-2 border-l-2 border-r-6 border-b-6 rotate-355 p-4 rounded-lg">
               <h3 className="text-2xl pb-4">PHASE 1</h3>
@@ -97,8 +111,8 @@ export default function Home() {
         </section>
 
         {/* Tokenomics Section */}
-        <section className="bg-blue-800 flex flex-col items-center  py-32 rounded-lg mt-6 text-center">
-          <h1 className="text-6xl pb-8 md:text-8xl text-yellow-500">TOKENOMICS</h1>
+        <section className="bg-blue-800 flex flex-col items-center  py-32 rounded-lg text-center">
+          <h1 className="text-4xl pb-8 md:text-8xl text-yellow-500">TOKENOMICS</h1>
           <div className="flex flex-col items-center">
             <p className="flex gap-2 items-center text-xl">
               <span>Supply:</span>
@@ -114,30 +128,60 @@ export default function Home() {
             </p>
 
             <div className="p-4 md:p-8 mt-4 bg-yellow-500 text-black border-t-2 border-l-2 border-b-6 border-r-6 rounded-lg">
-              <p className="flex flex-col gap-2">
-                <span>Contract Address:</span>
-                <span className="font-bold md:text-xl">0x14a8d0AC8Fc456899F2DD33C3f4E32403A78126c</span>
+              <p className="flex items-center gap-2 font-mono">
+                {/* Mobile (hidden on md and up) */}
+                <span className="font-bold text-lg md:hidden">{shortAddress}</span>
+
+                {/* Desktop (hidden below md) */}
+                <span className="font-bold text-sm hidden md:inline md:text-xl">{fullAddress}</span>
+
+                <button
+                  onClick={handleCopy}
+                  className="hover:opacity-70"
+                  aria-label="Copy address"
+                >
+                  <FiCopy size={20} />
+                </button>
               </p>
             </div>
             <div className="grid grid-cols-2 text-black gap-4 text-xl md:grid-cols-4 mt-4">
               <div className="bg-yellow-500 border-t-2 border-l-2 border-r-4 border-b-4 p-2 rounded-md">
-                <h1>DexScreener</h1>
+                <a href="https://dexscreener.com/bsc/0xfc5bf2c8d2dbf6b72ffd391ea4c1debe8c35422a">
+                  <div className="flex gap-2 items-center justify-center">
+                    <Image src="/images/dexscreener-black.png" width={20} height={20} alt="dexscreener" />
+                    <h1>DexScreener</h1>
+                  </div>
+                </a>
               </div>
               <div className="bg-yellow-500 border-t-2 border-l-2 border-r-4 border-b-4 p-2 rounded-md">
-                <h1>DexTools</h1>
+                <a href="https://www.dextools.io/app/en/bnb/pair-explorer/0xfc5bf2c8d2dbf6b72ffd391ea4c1debe8c35422a?t=1750926169211">
+                  <div className="flex gap-2 items-center justify-center">
+                    <Image src="/images/dextools-black.png" width={20} height={20} alt="dextools" />
+                    <h1>DEXTools</h1>
+                  </div>
+                </a>
               </div>
               <div className="bg-yellow-500 border-t-2 border-l-2 border-r-4 border-b-4 p-2 rounded-md">
-                <h1>BSCscan</h1>
+                <a href="https://bscscan.com/token/0x14a8d0ac8fc456899f2dd33c3f4e32403a78126c">
+                  <div className="flex gap-2 items-center justify-center">
+                    <Image src="/images/bscscan-black.png" width={20} height={20} alt="bscscan" />
+                    <h1>BSCscan</h1>
+                  </div>
+                </a>
               </div>
               <div className="bg-yellow-500 border-t-2 border-l-2 border-r-4 border-b-4 p-2 rounded-md">
-                <h1>Gecko Terminal</h1>
+              <a href="https://www.geckoterminal.com/bsc/pools/0xfc5bf2c8d2dbf6b72ffd391ea4c1debe8c35422a">
+                  <div className="flex gap-2 items-center justify-center">
+                    <h1>BSCscan</h1>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
         </section>
 
         <section className="flex py-16 flex-col items-center text-center px-8 md:px-16 text-xl">
-          <h1 className="text-6xl pb-4 md:text-8xl text-yellow-500">HOW TO BUY PUFFCAT</h1>
+          <h1 className="text-4xl pb-4 md:text-8xl text-yellow-500">HOW TO BUY PUFFCAT</h1>
           <div className="flex flex-col gap-4">
             <div className="bg-blue-700 border-blue-300 border-t-2 border-l-2 border-r-4 border-b-4 p-2 rounded-md">
               <p>Add/Buy Binance Smart Chain into your wallet (e.g. MetaMask, TrustWallet)</p>
@@ -158,22 +202,25 @@ export default function Home() {
         </section>
 
         <section className="bg-blue-800 text-lg flex flex-col items-center text-center py-16 px-8 md:px-16">
-          <h1 className="text-6xl md:text-8xl pb-4 text-yellow-500">COMMUNITY FIRST</h1>
+          <h1 className="text-4xl md:text-8xl pb-4 text-yellow-500">COMMUNITY FIRST</h1>
           <p className="pb-4">PuffCat isn&apos;t VC-backed or whale-controlled. It&apos;s meme-powered and people-led. Every feature, every drop,
             every decision is about making the community laugh, earn, and roar louder.</p>
           <p className="font-bold text-2xl">FOLLOW THE CAT. HOLD THE BAG. MEME THE MOON.</p>
         </section>
 
         {/* Footer */}
-        <footer className="p-4 rounded-lg mt-6 flex flex-col justify-between items-center">
+        <footer className="px-8 md:px-32 rounded-lg mt-12 mb-8 flex flex-col justify-between items-center">
           <div className="w-full mb-4 flex flex-row justify-between items-center">
             <Link href="/">
               <Image src="/images/puffcat-logo.png" alt="puffcat logo" width={50} height={50} className="" />
             </Link>
-            <div className="flex gap-2">
-              <p>DexScreener</p>
-              <p>DEXTools</p>
-              <p>BSCScan</p>
+            <div className="flex gap-2 md:gap-4 items-center">
+              <a href="https://dexscreener.com/bsc/0xfc5bf2c8d2dbf6b72ffd391ea4c1debe8c35422a">
+                <Image src="/images/dexscreener-b.png" alt="dexscreener" width={35} height={35} className="w-8 h-8 md:w-10 md:h-10" /></a>
+              <a href="https://www.dextools.io/app/en/bnb/pair-explorer/0xfc5bf2c8d2dbf6b72ffd391ea4c1debe8c35422a?t=1750926169211">
+                <Image src="/images/dextools-b.png" alt="dextools" width={35} height={35} className="w-8 h-9 md:w-10 md:h-12" /></a>
+              <a href="https://bscscan.com/token/0x14a8d0ac8fc456899f2dd33c3f4e32403a78126c">
+                <Image src="/images/bscscan.png" alt="bscscan" width={35} height={35} className="w-8 h-8 md:w-10 md:h-10" /></a>
             </div>
           </div>
           <p>PuffCat Token 2025 | All Rights Reserved</p>
