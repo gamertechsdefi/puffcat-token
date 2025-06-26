@@ -32,7 +32,7 @@ export default function Home() {
         <section className="flex flex-col px-8 md:px-16 items-center text-white rounded-lg text-center relative">
           <h1 className="text-7xl text-yellow-500 md:text-9xl mb-4">PUFFCAT</h1>
           <div className="flex flex-col md:flex-row items-center md:ml-[400px]">
-            <Image src="/images/puffcat-img.png" width={200} height={200} alt="Pika Hero" className="w-94 h-72 md:w-[500px] md:h-[400px]" />
+            <Image src="/images/puffcat-logo.png" width={200} height={200} alt="Pika Hero" className="w-94 h-72 md:w-[500px] md:h-[400px]" />
             <div className="flex flex-col items-center md:items-start md:ml-8">
               <p className="text-lg text-center md:text-left">
                 Ready for PuffCat Pumps? It&apos;s time for the big boss: PuffCat to flip dogs and frogs!
