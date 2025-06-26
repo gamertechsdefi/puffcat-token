@@ -102,6 +102,7 @@ export default function Home() {
               <h3 className="text-2xl pb-4">PHASE 3</h3>
               <p>BSCscan update</p>
               <p>Listing on DexScreener</p>
+              <p>Partnership with Callers</p>
               <p>CoinGecko & CoinMarketCap Applications</p>
             </div>
             <div className="bg-blue-800 border-blue-300 border-t-2 border-l-2 border-r-6 border-b-6 rotate-5 p-4 rounded-lg">
@@ -196,7 +197,7 @@ export default function Home() {
           <h1 className="text-4xl pb-4 md:text-8xl text-yellow-500">HOW TO BUY PUFFCAT</h1>
           <div className="flex flex-col gap-4">
             <div className="bg-blue-700 border-blue-300 border-t-2 border-l-2 border-r-4 border-b-4 p-2 rounded-md">
-              <p>Add/Buy Binance Smart Chain into your wallet (e.g. MetaMask, TrustWallet)</p>
+              <p>Buy Binance Smart Chain into your wallet (e.g. MetaMask, TrustWallet)</p>
             </div>
             <div className="bg-blue-700 border-blue-300 border-t-2 border-l-2 border-r-4 border-b-4 p-2 rounded-md">
               <p>Go to the PancakeSwap DEX in the browser</p>
