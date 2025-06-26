@@ -32,13 +32,13 @@ export default function Home() {
         <section className="flex flex-col px-8 md:px-16 items-center text-white rounded-lg text-center relative">
           <h1 className="text-7xl text-yellow-500 md:text-9xl mb-4">PUFFCAT</h1>
           <div className="flex flex-col md:flex-row items-center md:ml-[400px]">
-            <Image src="/images/puffcat-logo.png" width={200} height={200} alt="Pika Hero" className="w-86 h-86" />
+            <Image src="/images/puffcat-img.png" width={200} height={200} alt="Pika Hero" className="w-94 h-72 md:w-[500px] md:h-[400px]" />
             <div className="flex flex-col items-center md:items-start md:ml-8">
               <p className="text-lg text-center md:text-left">
                 Ready for PuffCat Pumps? It&apos;s time for the big boss: PuffCat to flip dogs and frogs!
               </p>
               <div className="flex justify-center space-x-4 mt-4">
-                <a href="https://dexscreener.com/bsc/0xfc5bf2c8d2dbf6b72ffd391ea4c1debe8c35422a">
+                <a href="https://pancakeswap.finance/?outputCurrency=0x14a8d0ac8fc456899f2dd33c3f4e32403a78126c">
                   <button className="font-bold bg-blue-400 text-white px-8 py-2 rounded">
                     Buy now
                   </button></a>
@@ -75,7 +75,6 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:justify-center">
             <div className="text-lg bg-blue-800 border-blue-300 border-t-2 border-l-2 border-r-6 border-b-6 rotate-355 p-4 rounded-lg">
               <h3 className="text-2xl pb-4">PHASE 1</h3>
-              <p>1M Market Cap</p>
               <p>PuffCat Socials Setup</p>
               <p>Smart Contract Deployment</p>
               <p>Listing on PancakeSwap</p>
@@ -83,9 +82,9 @@ export default function Home() {
             <div className="bg-blue-800 border-blue-300 border-t-2 border-l-2 border-r-6 border-b-6 rotate-5 p-4 rounded-lg">
               <h3 className="text-2xl pb-4">PHASE 2</h3>
               <p>Website Development & Release</p>
-              <p>Contests and Giveaways</p>
               <p>Listing on GekoTerminal & voting platforms</p>
-              <p>Partnership with Cat Brands</p>
+              <p>Listing on NTM.ai and BSC trending</p>
+              <p>Contests and Giveaways</p>
             </div>
             <div className="bg-blue-800 border-blue-300 border-t-2 border-l-2 border-r-6 border-b-6 rotate-350 p-4 rounded-lg">
               <h3 className="text-2xl pb-4">PHASE 3</h3>
@@ -98,7 +97,7 @@ export default function Home() {
               <p>Staking platform launch</p>
               <p>Community Onboarding</p>
               <p>Game Teasers/NFT Drops</p>
-              <p>More Cat Partnerships</p>
+              <p>Partnership with Cat Brands</p>
             </div>
             <div className="bg-blue-800 border-blue-300 border-t-2 border-l-2 border-r-6 border-b-6 rotate-355 p-4 rounded-lg">
               <h3 className="text-2xl pb-4">PHASE 5</h3>
